@@ -1,0 +1,10 @@
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\bin\Debug\client.exe.config
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\bin\Debug\client.exe
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\bin\Debug\client.pdb
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\bin\Debug\Newtonsoft.Json.dll
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\bin\Debug\Newtonsoft.Json.xml
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\obj\Debug\client.exe
+c:\users\chengwenjie\documents\visual studio 2013\Projects\client\client\obj\Debug\client.pdb
+C:\Users\chengwenjie\Documents\Visual Studio 2013\Projects\client\client\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\chengwenjie\Documents\Visual Studio 2013\Projects\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\chengwenjie\Documents\Visual Studio 2013\Projects\client\client\obj\Debug\client.csproj.CopyComplete
