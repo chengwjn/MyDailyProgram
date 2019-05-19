@@ -9,7 +9,7 @@ using namespace cv;
 
 
 
-int otsu(const cv::Mat& img)//Ñ°ÕÒ×îºÏÀíµÄãĞÖµ
+int otsu(const cv::Mat& img)//å¯»æ‰¾æœ€åˆç†çš„é˜ˆå€¼
 {
 	float histogram[256] = { 0 };
 	for (int i = 0; i < img.rows; i++)
@@ -49,50 +49,50 @@ int otsu(const cv::Mat& img)//Ñ°ÕÒ×îºÏÀíµÄãĞÖµ
 	return threshold;
 }
 //-------------------- -
-//×÷Õß£ºJustin__Ko
-//À´Ô´£ºCSDN
-//Ô­ÎÄ£ºhttps ://blog.csdn.net/kfqcome/article/details/9528773 
-//°æÈ¨ÉùÃ÷£º±¾ÎÄÎª²©Ö÷Ô­´´ÎÄÕÂ£¬×ªÔØÇë¸½ÉÏ²©ÎÄÁ´½Ó£¡
+//ä½œè€…ï¼šJustin__Ko
+//æ¥æºï¼šCSDN
+//åŸæ–‡ï¼šhttps ://blog.csdn.net/kfqcome/article/details/9528773 
+//ç‰ˆæƒå£°æ˜ï¼šæœ¬æ–‡ä¸ºåšä¸»åŸåˆ›æ–‡ç« ï¼Œè½¬è½½è¯·é™„ä¸Šåšæ–‡é“¾æ¥ï¼
 
 int main(int argc, char** argv)
 {
 
-	Mat srcImage = imread("C:/Users/cheng/Pictures/Camera Roll/20190415_174346.jpg");//¶ÁÈ¡Ô­Í¼
+	Mat srcImage = imread("C:/Users/xxxx/Xictures/Xxxxxx Xxxx/20190415_174346.jpg");//è¯»å–åŸå›¾
 	 
 	Mat grayImage;
 
-	cvtColor(srcImage,grayImage , COLOR_BGR2GRAY);//×ªÎª»Ò¶ÈÍ¼Ïñ
+	cvtColor(srcImage,grayImage , COLOR_BGR2GRAY);//è½¬ä¸ºç°åº¦å›¾åƒ
 	/*namedWindow("grayImage", 0);
 	imshow("grayImage", grayImage);*/
 
-	//Í¼Ïñ½µÔë
+	//å›¾åƒé™å™ª
 	Mat blurImage;
 	GaussianBlur(grayImage, blurImage, Size(5, 5),0,0,BORDER_DEFAULT);
 	/*namedWindow("blurImage",WINDOW_NORMAL);
 	imshow("blurImage", blurImage)*/;
 
-	//ĞÎÌ¬Ñ§´¦Àí
+	//å½¢æ€å­¦å¤„ç†
 	Mat openImage;
 	morphologyEx(grayImage, openImage, MORPH_OPEN,getStructuringElement(MORPH_RECT,Size(5,5)));
 	
-	//Mat dilateImage;(·Ïµô´ËÈıĞĞ)
+	//Mat dilateImage;(åºŸæ‰æ­¤ä¸‰è¡Œ)
 	//erode(blurImage, erodeImage, getStructuringElement(MORPH_RECT,Size(2,2)));
 	//dilate(erodeImage, dilateImage, getStructuringElement(MORPH_RECT, Size(2, 2)));
 	/*namedWindow("openImage1", WINDOW_NORMAL);
 	imshow("openImage1", openImage);*/
 
-	//ãĞÖµ·Ö¸î(¶şÖµ»¯)
+	//é˜ˆå€¼åˆ†å‰²(äºŒå€¼åŒ–)
 	Mat thresholdImage;
 	int thresh = otsu(openImage);
 	cout << thresh << endl;
-	thresh -= 30;//µ÷ÕûÒ»ÏÂãĞÖµ
+	thresh -= 30;//è°ƒæ•´ä¸€ä¸‹é˜ˆå€¼
 	threshold(openImage, thresholdImage, thresh,255,0);
 	/*namedWindow("thresholdImage", WINDOW_NORMAL);
 	imshow("thresholdImage", thresholdImage);*/
 
 	
 
-	//±ßÔµ¼ì²â
+	//è¾¹ç¼˜æ£€æµ‹
 	Mat SobelXImage;
 	Mat SobelXImageAbs;
 	Mat SobelYImage;
@@ -110,7 +110,7 @@ int main(int argc, char** argv)
 	/*namedWindow("SobelImage", 0);
 	imshow("SobelImage", SobelImage);*/
 
-	//É³µñ»ô·ò±ä»»(µ½µ×ÄÄÀï´íÁË°¡£¡£¡£¡)
+	//æ²™é›•éœå¤«å˜æ¢(åˆ°åº•å“ªé‡Œé”™äº†å•Šï¼ï¼ï¼)
 	/*Mat HoughImage;
 	vector<Vec4i>lines;
 	HoughLinesP(SobelImage, lines, 1, CV_PI / 180, thresh, 50, 10);
@@ -121,19 +121,19 @@ int main(int argc, char** argv)
 	}
 	namedWindow("HoughImage", 0);
 	imshow("HoughImage", HoughImage);*/
-	//Í¼Æ¬±ßÔµ¹â»¬´¦Àí
-//size±íÊ¾È¡¾ùÖµµÄ´°¿Ú´óĞ¡£¬threshold±íÊ¾¶Ô¾ùÖµÍ¼Ïñ½øĞĞ¶şÖµ»¯µÄãĞÖµ
+	//å›¾ç‰‡è¾¹ç¼˜å…‰æ»‘å¤„ç†
+//sizeè¡¨ç¤ºå–å‡å€¼çš„çª—å£å¤§å°ï¼Œthresholdè¡¨ç¤ºå¯¹å‡å€¼å›¾åƒè¿›è¡ŒäºŒå€¼åŒ–çš„é˜ˆå€¼
 	
 
 	
-	//ÔÙÒ»´Î½µÔë
+	//å†ä¸€æ¬¡é™å™ª
 	Mat blurImage2;
 	GaussianBlur(SobelImage, blurImage2, Size(3, 3), 0, 0, BORDER_DEFAULT);
 	/*namedWindow("blurImage2",WINDOW_NORMAL);
 	imshow("blurImage2", blurImage2);*/
 	//imwrite("C:/Users/cheng/Pictures/Camera Roll/blur2.jpg", blurImage2);
 
-	////ÔÚ½øĞĞÒ»´ÎĞÎÌ¬Ñ§´¦Àí
+	////åœ¨è¿›è¡Œä¸€æ¬¡å½¢æ€å­¦å¤„ç†
 	/*Mat openImage2;
 	morphologyEx(blurImage2, openImage2, MORPH_CLOSE, getStructuringElement(MORPH_RECT, Size(50, 50)));
 	namedWindow("openImage2", WINDOW_NORMAL);
@@ -150,20 +150,20 @@ int main(int argc, char** argv)
 	namedWindow("closeImage", WINDOW_NORMAL);
 	imshow("closeImage", openImage2);*/
 
-	////ÔÚ½øĞĞÒ»´Î¶şÖµ»¯
+	////åœ¨è¿›è¡Œä¸€æ¬¡äºŒå€¼åŒ–
 	Mat thresholdImage2;
 	int thresh2 = otsu(dilateImage);
 	threshold(dilateImage, thresholdImage2, thresh2, 255, 0);
 	namedWindow("thresholdImage2", WINDOW_NORMAL);
 	imshow("thresholdImage2", thresholdImage2);
 
-	////Æ½»¬´¦Àí
+	////å¹³æ»‘å¤„ç†
 	//Mat blurImage3;
 	//imageblur(thresholdImage2, blurImage3, Size(40,40), thresh);
 	//namedWindow("blurImage2", WINDOW_NORMAL);
 	//imshow("blurImage2", blurImage3);
 	
-	////Ñ°ÕÒÂÖÀª
+	////å¯»æ‰¾è½®å»“
 
 	//vector<vector<Point>> contours;
 	///*vector<Vec4i>hierarchy;*/
@@ -196,8 +196,8 @@ int main(int argc, char** argv)
 	waitKey(0);
 	return 0;
 }
-//Í¼Æ¬±ßÔµ¹â»¬´¦Àí
-//size±íÊ¾È¡¾ùÖµµÄ´°¿Ú´óĞ¡£¬threshold±íÊ¾¶Ô¾ùÖµÍ¼Ïñ½øĞĞ¶şÖµ»¯µÄãĞÖµ
+//å›¾ç‰‡è¾¹ç¼˜å…‰æ»‘å¤„ç†
+//sizeè¡¨ç¤ºå–å‡å€¼çš„çª—å£å¤§å°ï¼Œthresholdè¡¨ç¤ºå¯¹å‡å€¼å›¾åƒè¿›è¡ŒäºŒå€¼åŒ–çš„é˜ˆå€¼
 //void imageblur(Mat& src, Mat& dst, Size size, int threshold)
 //{
 //	int height = src.rows;
