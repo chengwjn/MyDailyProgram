@@ -1,5 +1,5 @@
-//ÀàĞÍµÄ×éºÏ
-//Êı×é£¬½á¹¹£¬Ö¸Õë 
+//ç±»å‹çš„ç»„åˆ
+//æ•°ç»„ï¼Œç»“æ„ï¼ŒæŒ‡é’ˆ 
 #include<iostream>
 using namespace std;
 struct antarctica_years_end
