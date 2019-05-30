@@ -1,5 +1,5 @@
 #include<iostream>
-//简单文件的输入和输出
+//绠�鍗曠殑鏂囦欢杈撳叆杈撳嚭
 #include<fstream>
 using namespace std;
 int main()
