@@ -1,4 +1,4 @@
-//¶ÁÈ¡Êý×ÖµÄÑ­»·
+
 #include<iostream>
 const int Max=5;
 int main()
