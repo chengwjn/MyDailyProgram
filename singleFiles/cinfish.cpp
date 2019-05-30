@@ -1,4 +1,4 @@
-//读取数字的循环
+//露脕脠隆脢媒脳脰碌脛脩颅禄路
 #include<iostream>
 const int Max=5;
 int main()
