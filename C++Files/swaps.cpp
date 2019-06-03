@@ -1,3 +1,4 @@
+//将引用用作函数参数
 #include<iostream>
 void swapr(int &a,int &b);//a,b are aliases for ints
 void swapp(int *p,int *q);//p,q are addresses of ints
