@@ -9,5 +9,6 @@ SelfStudy
 `6.`不写了，随缘<br>
 `7.`争取c++内容超过c#-2019.5.26<br>
 `8.`c++内容超过了c#-2019.6.3<br>
+`9.`工作还是以c#为主，所以还得还回去-2019.6.11<br>
 <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
