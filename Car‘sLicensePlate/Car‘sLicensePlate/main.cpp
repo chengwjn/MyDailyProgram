@@ -48,11 +48,9 @@ int otsu(const cv::Mat& img)//寻找最合理的阈值
 	}
 	return threshold;
 }
-//-------------------- -
+//以上部分
 //作者：Justin__Ko
 //来源：CSDN
-//原文：https ://blog.csdn.net/kfqcome/article/details/9528773 
-//版权声明：本文为博主原创文章，转载请附上博文链接！
 
 int main(int argc, char** argv)
 {
