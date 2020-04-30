@@ -12,5 +12,6 @@ SelfStudy
 `9.`工作还是以c#为主，所以还得还回去-2019.6.11<br>
 `10.`有点混乱，什么乱七八糟的就往里面塞-2019.6.13<br>
 `11.`开始学习Python-20200217<br>
+`12.`已上传4月学习进度，c++语言部分，6月前结束，按照现在的速度需要加快进度-20200430<br>
 <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
