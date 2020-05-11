@@ -6,6 +6,8 @@ int main()
     using namespace std;
     int cookies[Arsize] = {1, 2, 4, 8, 16, 32, 64, 128};
     int sum = sum_arr(cookies, cookies + Arsize);
+    int *a = cookies + Arsize;
+    cout << *a << " " << endl;
     //int a=cookies+Arsize;
     cout << "Total cookies eaten: " << sum << endl;
     sum = sum_arr(cookies, cookies + 3);
