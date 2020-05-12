@@ -7,6 +7,8 @@ int main()
     char *wail = "ululate";
     unsigned int ms = c_in_str(mmm, 'm');
     unsigned int us = c_in_str(wail, 'u');
+    cout << ms << " m characters in " << mmm << endl;
+    cout << us << " u characters in " << wail << endl;
     return 0;
 }
 unsigned int c_in_str(const char *str, char ch)
