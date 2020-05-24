@@ -26,7 +26,7 @@ int main()
     estimate(code, pam);
     return 0;
 }
-double besty(int lns)
+double betsy(int lns)
 {
     return 0.05 * lns;
 }
@@ -37,6 +37,6 @@ double pam(int lns)
 void estimate(int lines, double (*pf)(int))
 {
     using namespace std;
-    cout << lines << " lines will take";
+    cout << lines << " lines will take ";
     cout << (*pf)(lines) << " hour(s)\n";
 }
