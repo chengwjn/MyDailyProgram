@@ -1,0 +1,17 @@
+//funtemp.cpp -- using a funciton template
+#include <iostream>
+template <typename T> // or class T
+void Swap(T &a, T &b);
+
+int main()
+{
+    using namespace std;
+    int i = 10;
+    int j = 20;
+    cout << "i,j = " << i << ", " << j << ".\n";
+    cout << "Using compiler0generated int swapper:\n";
+    Swap(i, j); //generates void Swap(int &,int &)
+    cout << "Now i,j = " << i << ", " << j << ".\n";
+    double x = 24.5;
+    double y = 81.7;
+}
