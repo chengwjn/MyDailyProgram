@@ -52,3 +52,7 @@ char *left(const char *str, int n)
         p[i++] = '\0'; //set rest of string to '\0'
     return p;
 }
+
+//何时使用函数重载
+//虽然函数重载很吸引人，但也不能滥用。仅当函数基本上执行相同的任务，但使用不同形式的数据时，
+//才应用函数重载
