@@ -15,7 +15,7 @@ Stock::Stock(const std::string &co, long n, double pr)
 	{
 		std::cout << "Number of shares can't be negative;"
 				  << company << "shares set to 0.\n";
-		shares = 0
+		shares = 0;
 	}
 	else
 		shares = n;
@@ -40,7 +40,7 @@ void Stock::buy(long num, double price)
 	{
 		shares += num;
 		share_val = price;
-		set_tot;
+		set_tot();
 	}
 }
 void Stock::sell(long num, double price)
@@ -83,7 +83,7 @@ void Stock::show() const
 const Stock &Stock::topval(const Stock &s) const
 {
 	if (s.total_val > total_val)
-		return 0;
+		return s;
 	else
 		return *this;
 }
