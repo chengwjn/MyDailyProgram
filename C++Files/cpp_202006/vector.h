@@ -35,6 +35,7 @@ namespace VECTOR
         double angval() const { return ang; } //report angle
         void polar_mode();                    //set mode to POL
         void rect_mode();                     //set mode to RECT
+        
     };
 } // namespace VECTOR
 #endif
