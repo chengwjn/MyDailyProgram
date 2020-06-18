@@ -9,7 +9,8 @@ namespace VECTOR
         enum Mode
         {
             RECT,
-            POL
+            POL,
+            Length
         };
         //RECT for rectangular,POL for Polar modes
     private:
