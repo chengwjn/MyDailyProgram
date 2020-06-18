@@ -15,5 +15,6 @@ SelfStudy
 `12.`已上传4月学习进度，c++语言部分，6月前结束，按照现在的速度需要加快进度-20200430<br>
 `13.`还剩20天可以结束？-2020.5.10<br>
 `13.`事实证明不可以，还有一半。。。 -2020.5.29<br>
+`14.`进度尚可，20天内解决 -2020.6.18<br>
 <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
