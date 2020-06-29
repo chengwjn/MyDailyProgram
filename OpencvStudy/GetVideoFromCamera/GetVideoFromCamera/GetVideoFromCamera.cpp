@@ -1,18 +1,18 @@
-#include<opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
 using namespace cv;
 int main()
 {
-	VideoCapture capture(0);//´ÓÉãÏñÍ·¶ÁÈ¡ÊÓÆµ
-	while (1)//Ñ­»·Ã¿Ò»Ö¡
+	VideoCapture capture(0); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½È¡ï¿½ï¿½Æµ
+	while (1)				 //Ñ­ï¿½ï¿½Ã¿Ò»Ö¡
 	{
 		Mat frame;
-		capture >> frame;//½«capture´«ÈëMat frameÍ¼ÏñÖÐ
-		flip(frame, frame, 1);//ÑØyÖá·­×ªÍ¼Ïñ
-		cvtColor(frame, frame, COLOR_BGR2GRAY);//½«Í¼Ïñ³É»Ò¶ÈÍ¼
-		blur(frame, frame, Size(7, 7));//½øÐÐÄ£ºý½µÔë
-		Canny(frame, frame, 0, 30, 3);//canny±ßÔµ¼ì²â
-		imshow("", frame);//ÏÔÊ¾¾­¹ý´¦ÀíºóµÄµ±Ç°Ö¡
-		waitKey(30);//ÑÓ³Ù30ms
+		capture >> frame;						//ï¿½ï¿½captureï¿½ï¿½ï¿½ï¿½Mat frameÍ¼ï¿½ï¿½ï¿½ï¿½
+		flip(frame, frame, 1);					//ï¿½ï¿½yï¿½á·­×ªÍ¼ï¿½ï¿½
+		cvtColor(frame, frame, COLOR_BGR2GRAY); //ï¿½ï¿½Í¼ï¿½ï¿½É»Ò¶ï¿½Í¼
+		blur(frame, frame, Size(7, 7));			//ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		Canny(frame, frame, 0, 30, 3);			//cannyï¿½ï¿½Ôµï¿½ï¿½ï¿½
+		imshow("", frame);						//ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ç°Ö¡
+		waitKey(30);							//å»¶è¿Ÿ30ms
 	}
 	return 0;
 }
