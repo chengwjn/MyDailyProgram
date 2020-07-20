@@ -11,8 +11,11 @@ class Acctabc
     long acctNUm;
     double balance;
     protected:
+    struct Formatting
+    {
+        std::ios_base::fmtflags flag;
+    }
     
-
 }
 
 
