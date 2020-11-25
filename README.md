@@ -18,5 +18,6 @@ SelfStudy
 `13.`事实证明不可以，还有一半。。。 -2020.5.29<br>
 `14.`进度尚可，20天内解决 -2020.6.18<br>
 `15.`重新整理了本仓库 -2020.6.29<br>
+`16.`Qt开发开始搞一点 -2020.11.25<br>
 <a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg" alt="996.icu" /></a>
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
