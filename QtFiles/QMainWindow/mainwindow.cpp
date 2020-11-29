@@ -18,6 +18,19 @@ MainWindow::MainWindow(QWidget* parent)
     //浮动窗口
 }
 
+void MainWindow::InitUI()
+{
+    //创建UnderLine,Italic,Bold 3个Checkbox，并水平布局
+    chkBoxUnder = new QCheckBox(tr("UnderLine"));
+}
+
+void MainWindow::on_chkBoxBold(bool Checked)
+{
+    QFont font = txtEdit->font();
+    font.setUnderline(Checked);
+    txtEdit->setFont(font);
+}
+
 MainWindow::~MainWindow()
 {
 }
