@@ -1,9 +1,0 @@
-C:\Users\cheng\source\repos\SocketConnect\Client\obj\Debug\Client.Form1.resources
-C:\Users\cheng\source\repos\SocketConnect\Client\obj\Debug\Client.Properties.Resources.resources
-C:\Users\cheng\source\repos\SocketConnect\Client\obj\Debug\Client.csproj.GenerateResource.cache
-C:\Users\cheng\source\repos\SocketConnect\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
-C:\Users\cheng\source\repos\SocketConnect\Client\bin\Debug\Client.exe.config
-C:\Users\cheng\source\repos\SocketConnect\Client\bin\Debug\Client.exe
-C:\Users\cheng\source\repos\SocketConnect\Client\bin\Debug\Client.pdb
-C:\Users\cheng\source\repos\SocketConnect\Client\obj\Debug\Client.exe
-C:\Users\cheng\source\repos\SocketConnect\Client\obj\Debug\Client.pdb
