@@ -1,4 +1,4 @@
-## 学习计划安排和记录
+## 个人学习计划安排和记录
 ### 3月计划
 1. 3月8日	
 
@@ -20,13 +20,38 @@
 ### 4月计划
 1. c++ primer plus B站视频两周结束 (DDL:4.23)
      - 【C++教程第一阶段：C++ Primer Plus(第六版)教程 (公众号:嵌入式技术公开课）】 https://www.bilibili.com/video/BV1Yv411t7qe/?share_source=copy_web&vd_source=dc58cdc4ef2e01eabe777217e5ebf98d
+     
      - 4月10号:已完成
+     
      - 4月11日:已完成
+     
      - 4月12日:已完成
        1. 无符号类型
+       
        2. 整型字面值
+       
+          ```c p p
+          cout << hex;//以16进制打印
+          cout << oct;//以8进制打印
+          ```
+       
+       3. c++如何确定常量的类型
+       
+          1. l或者L后缀表示long常量
+          2. u或者U后缀表示unsigned int常量
+          3. l l,LL,ull,ULL etc
+       
+       4. char类型
+       
+       5. 转义序列 -> \n换行
+       
+       6. bool类型
+       
+       7. 浮点数
+     
 2. QT书籍两周内结束(DDL:4.23)
      - Qt5.9开发指南
+     
 3. Petalinux使用，嵌入式程序打包烧写的学习
 
    
