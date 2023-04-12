@@ -48,6 +48,8 @@
        6. bool类型
        
        7. 浮点数
+       
+          1. Double,float,long double
      
 2. QT书籍两周内结束(DDL:4.23)
      - Qt5.9开发指南
