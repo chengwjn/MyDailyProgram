@@ -50,6 +50,14 @@
        7. 浮点数
        
           1. Double,float,long double
+       
+     - 4月13日：<font color="red">未完成</font>
+       
+     - 4月14日：<font color="red">未完成</font>
+       
+     - 4月15日：<font color="red">未完成</font>
+       
+     - 4月16日：
      
 2. QT书籍两周内结束(DDL:4.23)
      - Qt5.9开发指南
