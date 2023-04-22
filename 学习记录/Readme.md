@@ -18,7 +18,7 @@
      - 学习Petalinux的使用方法，看手册或者教程
      - QT的学习开头
 ### 4月计划
-1. c++ primer plus B站视频两周结束 (EDC:4.23)
+1. c++ primer plus B站视频两周结束 (EDC:4.23)->(延期至月底)
      - 【C++教程第一阶段：C++ Primer Plus(第六版)教程 (公众号:嵌入式技术公开课）】 https://www.bilibili.com/video/BV1Yv411t7qe/?share_source=copy_web&vd_source=dc58cdc4ef2e01eabe777217e5ebf98d
      
      - 4月10号:已完成
@@ -59,7 +59,7 @@
        
      - 4月16日：
      
-2. QT书籍两周内结束(EDC:4.23)
+2. QT书籍两周内结束(EDC:4.23)->(延期至月底)
      - Qt5.9开发指南
      
 3. Petalinux使用，嵌入式程序打包烧写的学习
